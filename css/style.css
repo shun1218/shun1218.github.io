@@ -1,0 +1,64 @@
+body {
+  background-color: #E6F0ED;
+  font-size: 16px;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+.article {
+  margin-bottom: 1rem;
+}
+
+.card-button {
+  background-color: #457365;
+  color: #fff;
+}
+
+.calendar-icon {
+  border-radius: 50%;
+  margin: 0 0.5rem;
+  width: 100px;
+}
+
+.icon-img {
+  border-radius: 50%;
+  width: 150px;
+}
+
+.name {
+  margin-top: 1rem;
+}
+
+.portfolio-icon {
+  font-size: 5rem;
+}
+
+.portfolio-img {
+  display: inline-block;
+  height: 120px;
+}
+
+.portfolio-img img {
+  height: 100%;
+  width: initial;
+}
+
+.social-icon {
+  color: #212529;
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.social-img {
+  width: 1.5rem;
+  margin: 0 0.5rem;
+  vertical-align: middle;
+}
+
+.technology-icon {
+  font-size: 2rem;
+  margin: 0 0.5rem;
+}

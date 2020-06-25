@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Shun's Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav"></nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Blog</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-9 col-md-7 offset-md-1">
+          <div class="card article service">
+            <div class="card-body text-center">
+              <h3 class="card-title">あつまれ どうぶつの森用アイテムチェックリストを作ってみた - note</h3>
+              <p class="card-text">
+                2020/06/10
+              </p>
+            </div>
+            <img src="img/animal-crossing.jpg" class="card-img-top" alt="あつまれ どうぶつの森用アイテムチェックリストを作成しました">
+            <div class="card-body">
+              <p class="card-text">
+                Nintendo Switch用ソフト「あつまれ どうぶつの森」で使えるアイテムチェックリストを作ってみました。
+              </p>
+              <a href="https://note.com/shun_1218/n/n3ad206584483" class="btn btn-primary btn-lg" role="button">Continue Reading</a>
+            </div>
+          </div>
+          <div class="card article note">
+            <div class="card-body text-center">
+              <h3 class="card-title">Vtuberと任天堂ガイドライン - note</h3>
+              <p class="card-text">
+                2020/06/02
+              </p>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                思ったことを書きました。
+              </p>
+              <a href="https://note.com/shun_1218/n/nfbf822038f0f" class="btn btn-primary btn-lg" role="button">Continue Reading</a>
+            </div>
+          </div>
+          <div class="card article explanation">
+            <div class="card-body text-center">
+              <h3 class="card-title">自動でVtuberの配信予定を更新するカレンダーを作ってみた (Google Calendar編) - Qiita</h3>
+              <p class="card-text">
+                2020/02/01
+              </p>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                VtuberカレンダーのGoogleカレンダーへ予定を登録する部分に関する解説です。
+              </p>
+              <a href="https://qiita.com/shun_1218/items/f587f1641ba5c8f21538" class="btn btn-primary btn-lg" role="button">Continue Reading</a>
+            </div>
+          </div>
+          <div class="card article explanation">
+            <div class="card-body text-center">
+              <h3 class="card-title">自動でVtuberの配信予定を更新するカレンダーを作ってみた - Qiita</h3>
+              <p class="card-text">
+                2020/01/22
+              </p>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Youtube Data APIを用いてYoutubeチャンネルの動画情報を取得する方法の解説です。
+              </p>
+              <a href="https://qiita.com/shun_1218/items/1daab8c251e2ed1a5e6a" class="btn btn-primary btn-lg" role="button">Continue Reading</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <h4 class="card-title name">Category</h4>
+              <div class="list-group">
+                <button class="list-group-item list-group-item-action" onclick="showCategory('all')">All</button>
+                <button class="list-group-item list-group-item-action" onclick="showCategory('service')">Service</button>
+                <button class="list-group-item list-group-item-action" onclick="showCategory('explanation')">Explanation</button>
+                <button class="list-group-item list-group-item-action" onclick="showCategory('note')">Note</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(function() {
+        $('#nav').load('./nav.html', function(res, status, xhr) {
+          $('#navBlog').addClass('active');
+        });
+      });
+
+      function showCategory(category) {
+        switch (category) {
+          case 'service':
+            $('.explanation, .note').addClass('d-none');
+            $('.service').removeClass('d-none');
+            break;
+          case 'explanation':
+            $('.service, .note').addClass('d-none');
+            $('.explanation').removeClass('d-none');
+            break;
+          case 'note':
+            $('.service, .explanation').addClass('d-none');
+            $('.note').removeClass('d-none');
+            break;
+          case 'all':
+            $('.service, .explanation, .note').removeClass('d-none');
+        }
+      }
+    </script>  
+  </body>
+</html>

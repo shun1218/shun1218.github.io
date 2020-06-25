@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Shun's Page</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav"></nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Portfolio</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-6 col-md-5 offset-md-1">
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">あつまれ どうぶつの森用アイテムチェックリスト</h3>
+            </div>
+            <div class="portfolio-img text-center">
+              <img src="./img/animal-crossing-checklist.png" class="card-img-top" alt="あつまれ どうぶつの森用アイテムチェックリスト">
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Nintendo Switch用ソフト「あつまれ どうぶつの森」で使えるアイテムチェックリストを作ってみました。
+              </p>
+              <p class="text-center">
+                <i class="fab fa-html5 technology-icon"></i>
+                <i class="fab fa-css3 technology-icon"></i>
+                <i class="fab fa-js technology-icon"></i>
+                <i class="fab fa-node technology-icon"></i>
+              </p>
+              <p class="text-center">
+                <a href="./animalcrossing-collector.html" class="btn btn-primary btn-lg" role="button">Detail</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-md-5">
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">Vtuberカレンダー</h3>
+            </div>
+            <div class="portfolio-img text-center">
+              <i class="fas fa-calendar-alt portfolio-icon"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Vtuber（ホロライブ所属メンバー）の配信予定をGoogleカレンダーで参照できるようにしてみました。
+              </p>
+              <p class="text-center">
+                <i class="fab fa-python technology-icon"></i>
+              </p>
+              <p class="text-center">
+                <a href="./vtuber-calendar.html" class="btn btn-primary btn-lg" role="button">Detail</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#nav").load("./nav.html", function(res, status, xhr) {
+          $("#navPortfolio").addClass("active");
+        });
+      });
+    </script>  
+  </body>
+</html>

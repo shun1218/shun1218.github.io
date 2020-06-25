@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Shun's Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.1/css/tempusdominus-bootstrap-4.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav"></nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h1>Shun's Page</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <a href="./portfolio.html" class="card text-center card-button">
+            <div class="card-body">
+              <h2 class="card-title">Portfolio</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="./blog.html" class="card text-center card-button">
+            <div class="card-body">
+              <h2 class="card-title">Blog</h2>
+            </div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="./about.html" class="card text-center card-button">
+            <div class="card-body">
+              <h2 class="card-title">About Me</h2>
+            </div>
+          </a>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-9 col-md-7 offset-md-1">
+          <h4 class="text-center">最新記事</h4>
+          <div class="card">
+            <div class="card-body text-center">
+              <h3 class="card-title">あつまれ どうぶつの森用アイテムチェックリストを作ってみた</h3>
+              <p class="card-text">
+                2020/06/10
+              </p>
+            </div>
+            <img src="img/animal-crossing.jpg" class="card-img-top" alt="あつまれ どうぶつの森用アイテムチェックリストを作成しました">
+            <div class="card-body">
+              <p class="card-text">
+                Nintendo Switch用ソフト「あつまれ どうぶつの森」で使えるアイテムチェックリストを作ってみました。
+              </p>
+              <a href="https://note.com/shun_1218/n/n3ad206584483" class="btn btn-primary btn-lg" role="button">Continue Reading</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card">
+            <div class="card-body text-center">
+              <img src="https://pbs.twimg.com/profile_images/811128323338158080/HOROvBFF_400x400.jpg" class="card-img-top icon-img" alt="icon">
+              <h4 class="card-title name">シュン</h4>
+              <p class="card-text">東京で働いているエンジニアです。</p>
+            </div>
+            <div class="card-body text-center">
+              <a href="https://twitter.com/shun_1218" target="_blank" rel="noopener noreferrer"><img src="./img/twitter.svg" alt="Twitter" class="social-img"></a>
+              <a href="https://github.com/shun1218" target="_blank" rel="noopener noreferrer"><img src="./img/github.png" alt="GitHub" class="social-img"></a>
+              <a href="https://qiita.com/shun_1218" target="_blank" rel="noopener noreferrer"><img src="./img/qiita.png" alt="Qiita" class="social-img"></a>
+              <a href="https://note.com/shun_1218" target="_blank" rel="noopener noreferrer"><img src="./img/note.svg" alt="note" class="social-img"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(function() {
+        $("#nav").load("./nav.html", function(res, status, xhr) {
+          $("#navTop").addClass("active");
+        });
+      });
+    </script>  
+  </body>
+</html>
